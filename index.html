@@ -8,8 +8,14 @@
     body {
       font-family: sans-serif;
       padding: 20px;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
     }
     .card {
       border: 1px solid #ccc;
@@ -18,6 +24,10 @@
       border-radius: 10px;
       background: #f9f9f9;
       position: relative;
+      transition: opacity 1s ease;
+    }
+    .fade-out {
+      opacity: 0;
     }
     button {
       margin-top: 10px;
@@ -31,626 +41,2525 @@
     button:hover {
       background-color: #0056b3;
     }
-    .copied-message {
-      display: none;
-      color: green;
-      font-size: 0.9em;
-      margin-left: 10px;
-    }
   </style>
 </head>
 <body>
-  <h2>100 Quotes About Joy, Love & Family</h2>
+  <h1>500 Quotes About Joy, Love & Family</h1>
+<h2>Joy</h2>
 
-    <div class="card">
+    <div class="card" id="card1">
       <p id="quote1">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote1', 'msg1')">Copy</button>
-      <span class="copied-message" id="msg1">Copied!</span>
+      <button onclick="copyToClipboard('quote1', 'card1')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote2">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote2', 'msg2')">Copy</button>
-      <span class="copied-message" id="msg2">Copied!</span>
+    <div class="card" id="card2">
+      <p id="quote2">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote2', 'card2')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote3">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote3', 'msg3')">Copy</button>
-      <span class="copied-message" id="msg3">Copied!</span>
+    <div class="card" id="card3">
+      <p id="quote3">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote3', 'card3')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote4">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote4', 'msg4')">Copy</button>
-      <span class="copied-message" id="msg4">Copied!</span>
+    <div class="card" id="card4">
+      <p id="quote4">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote4', 'card4')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote5">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote5', 'msg5')">Copy</button>
-      <span class="copied-message" id="msg5">Copied!</span>
+    <div class="card" id="card5">
+      <p id="quote5">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote5', 'card5')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote6">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote6', 'msg6')">Copy</button>
-      <span class="copied-message" id="msg6">Copied!</span>
+    <div class="card" id="card6">
+      <p id="quote6">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote6', 'card6')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote7">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote7', 'msg7')">Copy</button>
-      <span class="copied-message" id="msg7">Copied!</span>
+    <div class="card" id="card7">
+      <p id="quote7">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote7', 'card7')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote8">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote8', 'msg8')">Copy</button>
-      <span class="copied-message" id="msg8">Copied!</span>
+    <div class="card" id="card8">
+      <p id="quote8">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote8', 'card8')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote9">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote9', 'msg9')">Copy</button>
-      <span class="copied-message" id="msg9">Copied!</span>
+    <div class="card" id="card9">
+      <p id="quote9">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote9', 'card9')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote10">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote10', 'msg10')">Copy</button>
-      <span class="copied-message" id="msg10">Copied!</span>
+    <div class="card" id="card10">
+      <p id="quote10">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote10', 'card10')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card11">
       <p id="quote11">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote11', 'msg11')">Copy</button>
-      <span class="copied-message" id="msg11">Copied!</span>
+      <button onclick="copyToClipboard('quote11', 'card11')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote12">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote12', 'msg12')">Copy</button>
-      <span class="copied-message" id="msg12">Copied!</span>
+    <div class="card" id="card12">
+      <p id="quote12">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote12', 'card12')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote13">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote13', 'msg13')">Copy</button>
-      <span class="copied-message" id="msg13">Copied!</span>
+    <div class="card" id="card13">
+      <p id="quote13">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote13', 'card13')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote14">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote14', 'msg14')">Copy</button>
-      <span class="copied-message" id="msg14">Copied!</span>
+    <div class="card" id="card14">
+      <p id="quote14">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote14', 'card14')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote15">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote15', 'msg15')">Copy</button>
-      <span class="copied-message" id="msg15">Copied!</span>
+    <div class="card" id="card15">
+      <p id="quote15">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote15', 'card15')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote16">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote16', 'msg16')">Copy</button>
-      <span class="copied-message" id="msg16">Copied!</span>
+    <div class="card" id="card16">
+      <p id="quote16">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote16', 'card16')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote17">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote17', 'msg17')">Copy</button>
-      <span class="copied-message" id="msg17">Copied!</span>
+    <div class="card" id="card17">
+      <p id="quote17">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote17', 'card17')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote18">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote18', 'msg18')">Copy</button>
-      <span class="copied-message" id="msg18">Copied!</span>
+    <div class="card" id="card18">
+      <p id="quote18">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote18', 'card18')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote19">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote19', 'msg19')">Copy</button>
-      <span class="copied-message" id="msg19">Copied!</span>
+    <div class="card" id="card19">
+      <p id="quote19">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote19', 'card19')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote20">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote20', 'msg20')">Copy</button>
-      <span class="copied-message" id="msg20">Copied!</span>
+    <div class="card" id="card20">
+      <p id="quote20">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote20', 'card20')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card21">
       <p id="quote21">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote21', 'msg21')">Copy</button>
-      <span class="copied-message" id="msg21">Copied!</span>
+      <button onclick="copyToClipboard('quote21', 'card21')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote22">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote22', 'msg22')">Copy</button>
-      <span class="copied-message" id="msg22">Copied!</span>
+    <div class="card" id="card22">
+      <p id="quote22">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote22', 'card22')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote23">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote23', 'msg23')">Copy</button>
-      <span class="copied-message" id="msg23">Copied!</span>
+    <div class="card" id="card23">
+      <p id="quote23">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote23', 'card23')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote24">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote24', 'msg24')">Copy</button>
-      <span class="copied-message" id="msg24">Copied!</span>
+    <div class="card" id="card24">
+      <p id="quote24">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote24', 'card24')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote25">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote25', 'msg25')">Copy</button>
-      <span class="copied-message" id="msg25">Copied!</span>
+    <div class="card" id="card25">
+      <p id="quote25">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote25', 'card25')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote26">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote26', 'msg26')">Copy</button>
-      <span class="copied-message" id="msg26">Copied!</span>
+    <div class="card" id="card26">
+      <p id="quote26">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote26', 'card26')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote27">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote27', 'msg27')">Copy</button>
-      <span class="copied-message" id="msg27">Copied!</span>
+    <div class="card" id="card27">
+      <p id="quote27">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote27', 'card27')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote28">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote28', 'msg28')">Copy</button>
-      <span class="copied-message" id="msg28">Copied!</span>
+    <div class="card" id="card28">
+      <p id="quote28">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote28', 'card28')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote29">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote29', 'msg29')">Copy</button>
-      <span class="copied-message" id="msg29">Copied!</span>
+    <div class="card" id="card29">
+      <p id="quote29">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote29', 'card29')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote30">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote30', 'msg30')">Copy</button>
-      <span class="copied-message" id="msg30">Copied!</span>
+    <div class="card" id="card30">
+      <p id="quote30">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote30', 'card30')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card31">
       <p id="quote31">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote31', 'msg31')">Copy</button>
-      <span class="copied-message" id="msg31">Copied!</span>
+      <button onclick="copyToClipboard('quote31', 'card31')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote32">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote32', 'msg32')">Copy</button>
-      <span class="copied-message" id="msg32">Copied!</span>
+    <div class="card" id="card32">
+      <p id="quote32">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote32', 'card32')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote33">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote33', 'msg33')">Copy</button>
-      <span class="copied-message" id="msg33">Copied!</span>
+    <div class="card" id="card33">
+      <p id="quote33">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote33', 'card33')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote34">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote34', 'msg34')">Copy</button>
-      <span class="copied-message" id="msg34">Copied!</span>
+    <div class="card" id="card34">
+      <p id="quote34">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote34', 'card34')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote35">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote35', 'msg35')">Copy</button>
-      <span class="copied-message" id="msg35">Copied!</span>
+    <div class="card" id="card35">
+      <p id="quote35">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote35', 'card35')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote36">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote36', 'msg36')">Copy</button>
-      <span class="copied-message" id="msg36">Copied!</span>
+    <div class="card" id="card36">
+      <p id="quote36">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote36', 'card36')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote37">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote37', 'msg37')">Copy</button>
-      <span class="copied-message" id="msg37">Copied!</span>
+    <div class="card" id="card37">
+      <p id="quote37">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote37', 'card37')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote38">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote38', 'msg38')">Copy</button>
-      <span class="copied-message" id="msg38">Copied!</span>
+    <div class="card" id="card38">
+      <p id="quote38">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote38', 'card38')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote39">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote39', 'msg39')">Copy</button>
-      <span class="copied-message" id="msg39">Copied!</span>
+    <div class="card" id="card39">
+      <p id="quote39">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote39', 'card39')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote40">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote40', 'msg40')">Copy</button>
-      <span class="copied-message" id="msg40">Copied!</span>
+    <div class="card" id="card40">
+      <p id="quote40">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote40', 'card40')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card41">
       <p id="quote41">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote41', 'msg41')">Copy</button>
-      <span class="copied-message" id="msg41">Copied!</span>
+      <button onclick="copyToClipboard('quote41', 'card41')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote42">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote42', 'msg42')">Copy</button>
-      <span class="copied-message" id="msg42">Copied!</span>
+    <div class="card" id="card42">
+      <p id="quote42">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote42', 'card42')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote43">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote43', 'msg43')">Copy</button>
-      <span class="copied-message" id="msg43">Copied!</span>
+    <div class="card" id="card43">
+      <p id="quote43">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote43', 'card43')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote44">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote44', 'msg44')">Copy</button>
-      <span class="copied-message" id="msg44">Copied!</span>
+    <div class="card" id="card44">
+      <p id="quote44">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote44', 'card44')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote45">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote45', 'msg45')">Copy</button>
-      <span class="copied-message" id="msg45">Copied!</span>
+    <div class="card" id="card45">
+      <p id="quote45">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote45', 'card45')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote46">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote46', 'msg46')">Copy</button>
-      <span class="copied-message" id="msg46">Copied!</span>
+    <div class="card" id="card46">
+      <p id="quote46">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote46', 'card46')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote47">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote47', 'msg47')">Copy</button>
-      <span class="copied-message" id="msg47">Copied!</span>
+    <div class="card" id="card47">
+      <p id="quote47">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote47', 'card47')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote48">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote48', 'msg48')">Copy</button>
-      <span class="copied-message" id="msg48">Copied!</span>
+    <div class="card" id="card48">
+      <p id="quote48">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote48', 'card48')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote49">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote49', 'msg49')">Copy</button>
-      <span class="copied-message" id="msg49">Copied!</span>
+    <div class="card" id="card49">
+      <p id="quote49">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote49', 'card49')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote50">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote50', 'msg50')">Copy</button>
-      <span class="copied-message" id="msg50">Copied!</span>
+    <div class="card" id="card50">
+      <p id="quote50">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote50', 'card50')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card51">
       <p id="quote51">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote51', 'msg51')">Copy</button>
-      <span class="copied-message" id="msg51">Copied!</span>
+      <button onclick="copyToClipboard('quote51', 'card51')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote52">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote52', 'msg52')">Copy</button>
-      <span class="copied-message" id="msg52">Copied!</span>
+    <div class="card" id="card52">
+      <p id="quote52">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote52', 'card52')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote53">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote53', 'msg53')">Copy</button>
-      <span class="copied-message" id="msg53">Copied!</span>
+    <div class="card" id="card53">
+      <p id="quote53">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote53', 'card53')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote54">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote54', 'msg54')">Copy</button>
-      <span class="copied-message" id="msg54">Copied!</span>
+    <div class="card" id="card54">
+      <p id="quote54">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote54', 'card54')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote55">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote55', 'msg55')">Copy</button>
-      <span class="copied-message" id="msg55">Copied!</span>
+    <div class="card" id="card55">
+      <p id="quote55">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote55', 'card55')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote56">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote56', 'msg56')">Copy</button>
-      <span class="copied-message" id="msg56">Copied!</span>
+    <div class="card" id="card56">
+      <p id="quote56">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote56', 'card56')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote57">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote57', 'msg57')">Copy</button>
-      <span class="copied-message" id="msg57">Copied!</span>
+    <div class="card" id="card57">
+      <p id="quote57">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote57', 'card57')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote58">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote58', 'msg58')">Copy</button>
-      <span class="copied-message" id="msg58">Copied!</span>
+    <div class="card" id="card58">
+      <p id="quote58">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote58', 'card58')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote59">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote59', 'msg59')">Copy</button>
-      <span class="copied-message" id="msg59">Copied!</span>
+    <div class="card" id="card59">
+      <p id="quote59">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote59', 'card59')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote60">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote60', 'msg60')">Copy</button>
-      <span class="copied-message" id="msg60">Copied!</span>
+    <div class="card" id="card60">
+      <p id="quote60">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote60', 'card60')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card61">
       <p id="quote61">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote61', 'msg61')">Copy</button>
-      <span class="copied-message" id="msg61">Copied!</span>
+      <button onclick="copyToClipboard('quote61', 'card61')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote62">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote62', 'msg62')">Copy</button>
-      <span class="copied-message" id="msg62">Copied!</span>
+    <div class="card" id="card62">
+      <p id="quote62">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote62', 'card62')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote63">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote63', 'msg63')">Copy</button>
-      <span class="copied-message" id="msg63">Copied!</span>
+    <div class="card" id="card63">
+      <p id="quote63">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote63', 'card63')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote64">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote64', 'msg64')">Copy</button>
-      <span class="copied-message" id="msg64">Copied!</span>
+    <div class="card" id="card64">
+      <p id="quote64">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote64', 'card64')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote65">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote65', 'msg65')">Copy</button>
-      <span class="copied-message" id="msg65">Copied!</span>
+    <div class="card" id="card65">
+      <p id="quote65">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote65', 'card65')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote66">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote66', 'msg66')">Copy</button>
-      <span class="copied-message" id="msg66">Copied!</span>
+    <div class="card" id="card66">
+      <p id="quote66">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote66', 'card66')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote67">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote67', 'msg67')">Copy</button>
-      <span class="copied-message" id="msg67">Copied!</span>
+    <div class="card" id="card67">
+      <p id="quote67">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote67', 'card67')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote68">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote68', 'msg68')">Copy</button>
-      <span class="copied-message" id="msg68">Copied!</span>
+    <div class="card" id="card68">
+      <p id="quote68">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote68', 'card68')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote69">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote69', 'msg69')">Copy</button>
-      <span class="copied-message" id="msg69">Copied!</span>
+    <div class="card" id="card69">
+      <p id="quote69">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote69', 'card69')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote70">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote70', 'msg70')">Copy</button>
-      <span class="copied-message" id="msg70">Copied!</span>
+    <div class="card" id="card70">
+      <p id="quote70">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote70', 'card70')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card71">
       <p id="quote71">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote71', 'msg71')">Copy</button>
-      <span class="copied-message" id="msg71">Copied!</span>
+      <button onclick="copyToClipboard('quote71', 'card71')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote72">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote72', 'msg72')">Copy</button>
-      <span class="copied-message" id="msg72">Copied!</span>
+    <div class="card" id="card72">
+      <p id="quote72">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote72', 'card72')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote73">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote73', 'msg73')">Copy</button>
-      <span class="copied-message" id="msg73">Copied!</span>
+    <div class="card" id="card73">
+      <p id="quote73">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote73', 'card73')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote74">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote74', 'msg74')">Copy</button>
-      <span class="copied-message" id="msg74">Copied!</span>
+    <div class="card" id="card74">
+      <p id="quote74">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote74', 'card74')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote75">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote75', 'msg75')">Copy</button>
-      <span class="copied-message" id="msg75">Copied!</span>
+    <div class="card" id="card75">
+      <p id="quote75">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote75', 'card75')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote76">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote76', 'msg76')">Copy</button>
-      <span class="copied-message" id="msg76">Copied!</span>
+    <div class="card" id="card76">
+      <p id="quote76">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote76', 'card76')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote77">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote77', 'msg77')">Copy</button>
-      <span class="copied-message" id="msg77">Copied!</span>
+    <div class="card" id="card77">
+      <p id="quote77">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote77', 'card77')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote78">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote78', 'msg78')">Copy</button>
-      <span class="copied-message" id="msg78">Copied!</span>
+    <div class="card" id="card78">
+      <p id="quote78">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote78', 'card78')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote79">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote79', 'msg79')">Copy</button>
-      <span class="copied-message" id="msg79">Copied!</span>
+    <div class="card" id="card79">
+      <p id="quote79">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote79', 'card79')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote80">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote80', 'msg80')">Copy</button>
-      <span class="copied-message" id="msg80">Copied!</span>
+    <div class="card" id="card80">
+      <p id="quote80">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote80', 'card80')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card81">
       <p id="quote81">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote81', 'msg81')">Copy</button>
-      <span class="copied-message" id="msg81">Copied!</span>
+      <button onclick="copyToClipboard('quote81', 'card81')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote82">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote82', 'msg82')">Copy</button>
-      <span class="copied-message" id="msg82">Copied!</span>
+    <div class="card" id="card82">
+      <p id="quote82">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote82', 'card82')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote83">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote83', 'msg83')">Copy</button>
-      <span class="copied-message" id="msg83">Copied!</span>
+    <div class="card" id="card83">
+      <p id="quote83">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote83', 'card83')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote84">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote84', 'msg84')">Copy</button>
-      <span class="copied-message" id="msg84">Copied!</span>
+    <div class="card" id="card84">
+      <p id="quote84">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote84', 'card84')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote85">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote85', 'msg85')">Copy</button>
-      <span class="copied-message" id="msg85">Copied!</span>
+    <div class="card" id="card85">
+      <p id="quote85">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote85', 'card85')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote86">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote86', 'msg86')">Copy</button>
-      <span class="copied-message" id="msg86">Copied!</span>
+    <div class="card" id="card86">
+      <p id="quote86">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote86', 'card86')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote87">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote87', 'msg87')">Copy</button>
-      <span class="copied-message" id="msg87">Copied!</span>
+    <div class="card" id="card87">
+      <p id="quote87">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote87', 'card87')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote88">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote88', 'msg88')">Copy</button>
-      <span class="copied-message" id="msg88">Copied!</span>
+    <div class="card" id="card88">
+      <p id="quote88">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote88', 'card88')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote89">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote89', 'msg89')">Copy</button>
-      <span class="copied-message" id="msg89">Copied!</span>
+    <div class="card" id="card89">
+      <p id="quote89">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote89', 'card89')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote90">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote90', 'msg90')">Copy</button>
-      <span class="copied-message" id="msg90">Copied!</span>
+    <div class="card" id="card90">
+      <p id="quote90">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote90', 'card90')">Copy</button>
     </div>
     
-    <div class="card">
+    <div class="card" id="card91">
       <p id="quote91">Joy is not in things; it is in us.</p>
-      <button onclick="copyToClipboard('quote91', 'msg91')">Copy</button>
-      <span class="copied-message" id="msg91">Copied!</span>
+      <button onclick="copyToClipboard('quote91', 'card91')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote92">The best thing to hold onto in life is each other.</p>
-      <button onclick="copyToClipboard('quote92', 'msg92')">Copy</button>
-      <span class="copied-message" id="msg92">Copied!</span>
+    <div class="card" id="card92">
+      <p id="quote92">Find joy in the ordinary.</p>
+      <button onclick="copyToClipboard('quote92', 'card92')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote93">Family is not an important thing, it’s everything.</p>
-      <button onclick="copyToClipboard('quote93', 'msg93')">Copy</button>
-      <span class="copied-message" id="msg93">Copied!</span>
+    <div class="card" id="card93">
+      <p id="quote93">Joy is the simplest form of gratitude.</p>
+      <button onclick="copyToClipboard('quote93', 'card93')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote94">Love begins at home.</p>
-      <button onclick="copyToClipboard('quote94', 'msg94')">Copy</button>
-      <span class="copied-message" id="msg94">Copied!</span>
+    <div class="card" id="card94">
+      <p id="quote94">Let your joy burst forth like flowers in the spring.</p>
+      <button onclick="copyToClipboard('quote94', 'card94')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote95">A happy family is but an earlier heaven.</p>
-      <button onclick="copyToClipboard('quote95', 'msg95')">Copy</button>
-      <span class="copied-message" id="msg95">Copied!</span>
+    <div class="card" id="card95">
+      <p id="quote95">Choose joy every single day.</p>
+      <button onclick="copyToClipboard('quote95', 'card95')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote96">Where there is love, there is life.</p>
-      <button onclick="copyToClipboard('quote96', 'msg96')">Copy</button>
-      <span class="copied-message" id="msg96">Copied!</span>
+    <div class="card" id="card96">
+      <p id="quote96">Joy is contagious—pass it on.</p>
+      <button onclick="copyToClipboard('quote96', 'card96')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote97">The love of family is life's greatest blessing.</p>
-      <button onclick="copyToClipboard('quote97', 'msg97')">Copy</button>
-      <span class="copied-message" id="msg97">Copied!</span>
+    <div class="card" id="card97">
+      <p id="quote97">Celebrate the little joys of life.</p>
+      <button onclick="copyToClipboard('quote97', 'card97')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote98">It's not what we have in life, but who we have in our life that matters.</p>
-      <button onclick="copyToClipboard('quote98', 'msg98')">Copy</button>
-      <span class="copied-message" id="msg98">Copied!</span>
+    <div class="card" id="card98">
+      <p id="quote98">Joy is a decision, not a condition.</p>
+      <button onclick="copyToClipboard('quote98', 'card98')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote99">Joy multiplies when it is shared among friends and family.</p>
-      <button onclick="copyToClipboard('quote99', 'msg99')">Copy</button>
-      <span class="copied-message" id="msg99">Copied!</span>
+    <div class="card" id="card99">
+      <p id="quote99">Live joyfully, even in small moments.</p>
+      <button onclick="copyToClipboard('quote99', 'card99')">Copy</button>
     </div>
     
-    <div class="card">
-      <p id="quote100">Happiness is homemade.</p>
-      <button onclick="copyToClipboard('quote100', 'msg100')">Copy</button>
-      <span class="copied-message" id="msg100">Copied!</span>
+    <div class="card" id="card100">
+      <p id="quote100">True joy is a quiet gladness of heart.</p>
+      <button onclick="copyToClipboard('quote100', 'card100')">Copy</button>
+    </div>
+    <h2>Love</h2>
+
+    <div class="card" id="card101">
+      <p id="quote101">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote101', 'card101')">Copy</button>
+    </div>
+    
+    <div class="card" id="card102">
+      <p id="quote102">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote102', 'card102')">Copy</button>
+    </div>
+    
+    <div class="card" id="card103">
+      <p id="quote103">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote103', 'card103')">Copy</button>
+    </div>
+    
+    <div class="card" id="card104">
+      <p id="quote104">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote104', 'card104')">Copy</button>
+    </div>
+    
+    <div class="card" id="card105">
+      <p id="quote105">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote105', 'card105')">Copy</button>
+    </div>
+    
+    <div class="card" id="card106">
+      <p id="quote106">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote106', 'card106')">Copy</button>
+    </div>
+    
+    <div class="card" id="card107">
+      <p id="quote107">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote107', 'card107')">Copy</button>
+    </div>
+    
+    <div class="card" id="card108">
+      <p id="quote108">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote108', 'card108')">Copy</button>
+    </div>
+    
+    <div class="card" id="card109">
+      <p id="quote109">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote109', 'card109')">Copy</button>
+    </div>
+    
+    <div class="card" id="card110">
+      <p id="quote110">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote110', 'card110')">Copy</button>
+    </div>
+    
+    <div class="card" id="card111">
+      <p id="quote111">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote111', 'card111')">Copy</button>
+    </div>
+    
+    <div class="card" id="card112">
+      <p id="quote112">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote112', 'card112')">Copy</button>
+    </div>
+    
+    <div class="card" id="card113">
+      <p id="quote113">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote113', 'card113')">Copy</button>
+    </div>
+    
+    <div class="card" id="card114">
+      <p id="quote114">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote114', 'card114')">Copy</button>
+    </div>
+    
+    <div class="card" id="card115">
+      <p id="quote115">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote115', 'card115')">Copy</button>
+    </div>
+    
+    <div class="card" id="card116">
+      <p id="quote116">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote116', 'card116')">Copy</button>
+    </div>
+    
+    <div class="card" id="card117">
+      <p id="quote117">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote117', 'card117')">Copy</button>
+    </div>
+    
+    <div class="card" id="card118">
+      <p id="quote118">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote118', 'card118')">Copy</button>
+    </div>
+    
+    <div class="card" id="card119">
+      <p id="quote119">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote119', 'card119')">Copy</button>
+    </div>
+    
+    <div class="card" id="card120">
+      <p id="quote120">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote120', 'card120')">Copy</button>
+    </div>
+    
+    <div class="card" id="card121">
+      <p id="quote121">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote121', 'card121')">Copy</button>
+    </div>
+    
+    <div class="card" id="card122">
+      <p id="quote122">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote122', 'card122')">Copy</button>
+    </div>
+    
+    <div class="card" id="card123">
+      <p id="quote123">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote123', 'card123')">Copy</button>
+    </div>
+    
+    <div class="card" id="card124">
+      <p id="quote124">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote124', 'card124')">Copy</button>
+    </div>
+    
+    <div class="card" id="card125">
+      <p id="quote125">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote125', 'card125')">Copy</button>
+    </div>
+    
+    <div class="card" id="card126">
+      <p id="quote126">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote126', 'card126')">Copy</button>
+    </div>
+    
+    <div class="card" id="card127">
+      <p id="quote127">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote127', 'card127')">Copy</button>
+    </div>
+    
+    <div class="card" id="card128">
+      <p id="quote128">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote128', 'card128')">Copy</button>
+    </div>
+    
+    <div class="card" id="card129">
+      <p id="quote129">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote129', 'card129')">Copy</button>
+    </div>
+    
+    <div class="card" id="card130">
+      <p id="quote130">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote130', 'card130')">Copy</button>
+    </div>
+    
+    <div class="card" id="card131">
+      <p id="quote131">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote131', 'card131')">Copy</button>
+    </div>
+    
+    <div class="card" id="card132">
+      <p id="quote132">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote132', 'card132')">Copy</button>
+    </div>
+    
+    <div class="card" id="card133">
+      <p id="quote133">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote133', 'card133')">Copy</button>
+    </div>
+    
+    <div class="card" id="card134">
+      <p id="quote134">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote134', 'card134')">Copy</button>
+    </div>
+    
+    <div class="card" id="card135">
+      <p id="quote135">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote135', 'card135')">Copy</button>
+    </div>
+    
+    <div class="card" id="card136">
+      <p id="quote136">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote136', 'card136')">Copy</button>
+    </div>
+    
+    <div class="card" id="card137">
+      <p id="quote137">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote137', 'card137')">Copy</button>
+    </div>
+    
+    <div class="card" id="card138">
+      <p id="quote138">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote138', 'card138')">Copy</button>
+    </div>
+    
+    <div class="card" id="card139">
+      <p id="quote139">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote139', 'card139')">Copy</button>
+    </div>
+    
+    <div class="card" id="card140">
+      <p id="quote140">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote140', 'card140')">Copy</button>
+    </div>
+    
+    <div class="card" id="card141">
+      <p id="quote141">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote141', 'card141')">Copy</button>
+    </div>
+    
+    <div class="card" id="card142">
+      <p id="quote142">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote142', 'card142')">Copy</button>
+    </div>
+    
+    <div class="card" id="card143">
+      <p id="quote143">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote143', 'card143')">Copy</button>
+    </div>
+    
+    <div class="card" id="card144">
+      <p id="quote144">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote144', 'card144')">Copy</button>
+    </div>
+    
+    <div class="card" id="card145">
+      <p id="quote145">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote145', 'card145')">Copy</button>
+    </div>
+    
+    <div class="card" id="card146">
+      <p id="quote146">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote146', 'card146')">Copy</button>
+    </div>
+    
+    <div class="card" id="card147">
+      <p id="quote147">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote147', 'card147')">Copy</button>
+    </div>
+    
+    <div class="card" id="card148">
+      <p id="quote148">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote148', 'card148')">Copy</button>
+    </div>
+    
+    <div class="card" id="card149">
+      <p id="quote149">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote149', 'card149')">Copy</button>
+    </div>
+    
+    <div class="card" id="card150">
+      <p id="quote150">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote150', 'card150')">Copy</button>
+    </div>
+    
+    <div class="card" id="card151">
+      <p id="quote151">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote151', 'card151')">Copy</button>
+    </div>
+    
+    <div class="card" id="card152">
+      <p id="quote152">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote152', 'card152')">Copy</button>
+    </div>
+    
+    <div class="card" id="card153">
+      <p id="quote153">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote153', 'card153')">Copy</button>
+    </div>
+    
+    <div class="card" id="card154">
+      <p id="quote154">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote154', 'card154')">Copy</button>
+    </div>
+    
+    <div class="card" id="card155">
+      <p id="quote155">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote155', 'card155')">Copy</button>
+    </div>
+    
+    <div class="card" id="card156">
+      <p id="quote156">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote156', 'card156')">Copy</button>
+    </div>
+    
+    <div class="card" id="card157">
+      <p id="quote157">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote157', 'card157')">Copy</button>
+    </div>
+    
+    <div class="card" id="card158">
+      <p id="quote158">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote158', 'card158')">Copy</button>
+    </div>
+    
+    <div class="card" id="card159">
+      <p id="quote159">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote159', 'card159')">Copy</button>
+    </div>
+    
+    <div class="card" id="card160">
+      <p id="quote160">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote160', 'card160')">Copy</button>
+    </div>
+    
+    <div class="card" id="card161">
+      <p id="quote161">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote161', 'card161')">Copy</button>
+    </div>
+    
+    <div class="card" id="card162">
+      <p id="quote162">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote162', 'card162')">Copy</button>
+    </div>
+    
+    <div class="card" id="card163">
+      <p id="quote163">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote163', 'card163')">Copy</button>
+    </div>
+    
+    <div class="card" id="card164">
+      <p id="quote164">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote164', 'card164')">Copy</button>
+    </div>
+    
+    <div class="card" id="card165">
+      <p id="quote165">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote165', 'card165')">Copy</button>
+    </div>
+    
+    <div class="card" id="card166">
+      <p id="quote166">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote166', 'card166')">Copy</button>
+    </div>
+    
+    <div class="card" id="card167">
+      <p id="quote167">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote167', 'card167')">Copy</button>
+    </div>
+    
+    <div class="card" id="card168">
+      <p id="quote168">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote168', 'card168')">Copy</button>
+    </div>
+    
+    <div class="card" id="card169">
+      <p id="quote169">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote169', 'card169')">Copy</button>
+    </div>
+    
+    <div class="card" id="card170">
+      <p id="quote170">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote170', 'card170')">Copy</button>
+    </div>
+    
+    <div class="card" id="card171">
+      <p id="quote171">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote171', 'card171')">Copy</button>
+    </div>
+    
+    <div class="card" id="card172">
+      <p id="quote172">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote172', 'card172')">Copy</button>
+    </div>
+    
+    <div class="card" id="card173">
+      <p id="quote173">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote173', 'card173')">Copy</button>
+    </div>
+    
+    <div class="card" id="card174">
+      <p id="quote174">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote174', 'card174')">Copy</button>
+    </div>
+    
+    <div class="card" id="card175">
+      <p id="quote175">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote175', 'card175')">Copy</button>
+    </div>
+    
+    <div class="card" id="card176">
+      <p id="quote176">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote176', 'card176')">Copy</button>
+    </div>
+    
+    <div class="card" id="card177">
+      <p id="quote177">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote177', 'card177')">Copy</button>
+    </div>
+    
+    <div class="card" id="card178">
+      <p id="quote178">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote178', 'card178')">Copy</button>
+    </div>
+    
+    <div class="card" id="card179">
+      <p id="quote179">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote179', 'card179')">Copy</button>
+    </div>
+    
+    <div class="card" id="card180">
+      <p id="quote180">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote180', 'card180')">Copy</button>
+    </div>
+    
+    <div class="card" id="card181">
+      <p id="quote181">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote181', 'card181')">Copy</button>
+    </div>
+    
+    <div class="card" id="card182">
+      <p id="quote182">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote182', 'card182')">Copy</button>
+    </div>
+    
+    <div class="card" id="card183">
+      <p id="quote183">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote183', 'card183')">Copy</button>
+    </div>
+    
+    <div class="card" id="card184">
+      <p id="quote184">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote184', 'card184')">Copy</button>
+    </div>
+    
+    <div class="card" id="card185">
+      <p id="quote185">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote185', 'card185')">Copy</button>
+    </div>
+    
+    <div class="card" id="card186">
+      <p id="quote186">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote186', 'card186')">Copy</button>
+    </div>
+    
+    <div class="card" id="card187">
+      <p id="quote187">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote187', 'card187')">Copy</button>
+    </div>
+    
+    <div class="card" id="card188">
+      <p id="quote188">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote188', 'card188')">Copy</button>
+    </div>
+    
+    <div class="card" id="card189">
+      <p id="quote189">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote189', 'card189')">Copy</button>
+    </div>
+    
+    <div class="card" id="card190">
+      <p id="quote190">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote190', 'card190')">Copy</button>
+    </div>
+    
+    <div class="card" id="card191">
+      <p id="quote191">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote191', 'card191')">Copy</button>
+    </div>
+    
+    <div class="card" id="card192">
+      <p id="quote192">Love is composed of a single soul inhabiting two bodies.</p>
+      <button onclick="copyToClipboard('quote192', 'card192')">Copy</button>
+    </div>
+    
+    <div class="card" id="card193">
+      <p id="quote193">To love and be loved is to feel the sun from both sides.</p>
+      <button onclick="copyToClipboard('quote193', 'card193')">Copy</button>
+    </div>
+    
+    <div class="card" id="card194">
+      <p id="quote194">Love is a daily act of kindness.</p>
+      <button onclick="copyToClipboard('quote194', 'card194')">Copy</button>
+    </div>
+    
+    <div class="card" id="card195">
+      <p id="quote195">Let all that you do be done in love.</p>
+      <button onclick="copyToClipboard('quote195', 'card195')">Copy</button>
+    </div>
+    
+    <div class="card" id="card196">
+      <p id="quote196">Love grows when shared.</p>
+      <button onclick="copyToClipboard('quote196', 'card196')">Copy</button>
+    </div>
+    
+    <div class="card" id="card197">
+      <p id="quote197">Love is the bridge between two hearts.</p>
+      <button onclick="copyToClipboard('quote197', 'card197')">Copy</button>
+    </div>
+    
+    <div class="card" id="card198">
+      <p id="quote198">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote198', 'card198')">Copy</button>
+    </div>
+    
+    <div class="card" id="card199">
+      <p id="quote199">Love is not what you say, it's what you do.</p>
+      <button onclick="copyToClipboard('quote199', 'card199')">Copy</button>
+    </div>
+    
+    <div class="card" id="card200">
+      <p id="quote200">In a world full of trends, be love.</p>
+      <button onclick="copyToClipboard('quote200', 'card200')">Copy</button>
+    </div>
+    <h2>Family</h2>
+
+    <div class="card" id="card201">
+      <p id="quote201">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote201', 'card201')">Copy</button>
+    </div>
+    
+    <div class="card" id="card202">
+      <p id="quote202">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote202', 'card202')">Copy</button>
+    </div>
+    
+    <div class="card" id="card203">
+      <p id="quote203">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote203', 'card203')">Copy</button>
+    </div>
+    
+    <div class="card" id="card204">
+      <p id="quote204">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote204', 'card204')">Copy</button>
+    </div>
+    
+    <div class="card" id="card205">
+      <p id="quote205">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote205', 'card205')">Copy</button>
+    </div>
+    
+    <div class="card" id="card206">
+      <p id="quote206">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote206', 'card206')">Copy</button>
+    </div>
+    
+    <div class="card" id="card207">
+      <p id="quote207">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote207', 'card207')">Copy</button>
+    </div>
+    
+    <div class="card" id="card208">
+      <p id="quote208">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote208', 'card208')">Copy</button>
+    </div>
+    
+    <div class="card" id="card209">
+      <p id="quote209">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote209', 'card209')">Copy</button>
+    </div>
+    
+    <div class="card" id="card210">
+      <p id="quote210">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote210', 'card210')">Copy</button>
+    </div>
+    
+    <div class="card" id="card211">
+      <p id="quote211">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote211', 'card211')">Copy</button>
+    </div>
+    
+    <div class="card" id="card212">
+      <p id="quote212">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote212', 'card212')">Copy</button>
+    </div>
+    
+    <div class="card" id="card213">
+      <p id="quote213">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote213', 'card213')">Copy</button>
+    </div>
+    
+    <div class="card" id="card214">
+      <p id="quote214">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote214', 'card214')">Copy</button>
+    </div>
+    
+    <div class="card" id="card215">
+      <p id="quote215">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote215', 'card215')">Copy</button>
+    </div>
+    
+    <div class="card" id="card216">
+      <p id="quote216">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote216', 'card216')">Copy</button>
+    </div>
+    
+    <div class="card" id="card217">
+      <p id="quote217">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote217', 'card217')">Copy</button>
+    </div>
+    
+    <div class="card" id="card218">
+      <p id="quote218">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote218', 'card218')">Copy</button>
+    </div>
+    
+    <div class="card" id="card219">
+      <p id="quote219">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote219', 'card219')">Copy</button>
+    </div>
+    
+    <div class="card" id="card220">
+      <p id="quote220">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote220', 'card220')">Copy</button>
+    </div>
+    
+    <div class="card" id="card221">
+      <p id="quote221">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote221', 'card221')">Copy</button>
+    </div>
+    
+    <div class="card" id="card222">
+      <p id="quote222">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote222', 'card222')">Copy</button>
+    </div>
+    
+    <div class="card" id="card223">
+      <p id="quote223">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote223', 'card223')">Copy</button>
+    </div>
+    
+    <div class="card" id="card224">
+      <p id="quote224">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote224', 'card224')">Copy</button>
+    </div>
+    
+    <div class="card" id="card225">
+      <p id="quote225">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote225', 'card225')">Copy</button>
+    </div>
+    
+    <div class="card" id="card226">
+      <p id="quote226">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote226', 'card226')">Copy</button>
+    </div>
+    
+    <div class="card" id="card227">
+      <p id="quote227">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote227', 'card227')">Copy</button>
+    </div>
+    
+    <div class="card" id="card228">
+      <p id="quote228">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote228', 'card228')">Copy</button>
+    </div>
+    
+    <div class="card" id="card229">
+      <p id="quote229">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote229', 'card229')">Copy</button>
+    </div>
+    
+    <div class="card" id="card230">
+      <p id="quote230">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote230', 'card230')">Copy</button>
+    </div>
+    
+    <div class="card" id="card231">
+      <p id="quote231">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote231', 'card231')">Copy</button>
+    </div>
+    
+    <div class="card" id="card232">
+      <p id="quote232">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote232', 'card232')">Copy</button>
+    </div>
+    
+    <div class="card" id="card233">
+      <p id="quote233">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote233', 'card233')">Copy</button>
+    </div>
+    
+    <div class="card" id="card234">
+      <p id="quote234">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote234', 'card234')">Copy</button>
+    </div>
+    
+    <div class="card" id="card235">
+      <p id="quote235">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote235', 'card235')">Copy</button>
+    </div>
+    
+    <div class="card" id="card236">
+      <p id="quote236">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote236', 'card236')">Copy</button>
+    </div>
+    
+    <div class="card" id="card237">
+      <p id="quote237">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote237', 'card237')">Copy</button>
+    </div>
+    
+    <div class="card" id="card238">
+      <p id="quote238">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote238', 'card238')">Copy</button>
+    </div>
+    
+    <div class="card" id="card239">
+      <p id="quote239">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote239', 'card239')">Copy</button>
+    </div>
+    
+    <div class="card" id="card240">
+      <p id="quote240">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote240', 'card240')">Copy</button>
+    </div>
+    
+    <div class="card" id="card241">
+      <p id="quote241">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote241', 'card241')">Copy</button>
+    </div>
+    
+    <div class="card" id="card242">
+      <p id="quote242">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote242', 'card242')">Copy</button>
+    </div>
+    
+    <div class="card" id="card243">
+      <p id="quote243">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote243', 'card243')">Copy</button>
+    </div>
+    
+    <div class="card" id="card244">
+      <p id="quote244">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote244', 'card244')">Copy</button>
+    </div>
+    
+    <div class="card" id="card245">
+      <p id="quote245">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote245', 'card245')">Copy</button>
+    </div>
+    
+    <div class="card" id="card246">
+      <p id="quote246">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote246', 'card246')">Copy</button>
+    </div>
+    
+    <div class="card" id="card247">
+      <p id="quote247">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote247', 'card247')">Copy</button>
+    </div>
+    
+    <div class="card" id="card248">
+      <p id="quote248">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote248', 'card248')">Copy</button>
+    </div>
+    
+    <div class="card" id="card249">
+      <p id="quote249">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote249', 'card249')">Copy</button>
+    </div>
+    
+    <div class="card" id="card250">
+      <p id="quote250">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote250', 'card250')">Copy</button>
+    </div>
+    
+    <div class="card" id="card251">
+      <p id="quote251">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote251', 'card251')">Copy</button>
+    </div>
+    
+    <div class="card" id="card252">
+      <p id="quote252">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote252', 'card252')">Copy</button>
+    </div>
+    
+    <div class="card" id="card253">
+      <p id="quote253">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote253', 'card253')">Copy</button>
+    </div>
+    
+    <div class="card" id="card254">
+      <p id="quote254">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote254', 'card254')">Copy</button>
+    </div>
+    
+    <div class="card" id="card255">
+      <p id="quote255">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote255', 'card255')">Copy</button>
+    </div>
+    
+    <div class="card" id="card256">
+      <p id="quote256">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote256', 'card256')">Copy</button>
+    </div>
+    
+    <div class="card" id="card257">
+      <p id="quote257">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote257', 'card257')">Copy</button>
+    </div>
+    
+    <div class="card" id="card258">
+      <p id="quote258">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote258', 'card258')">Copy</button>
+    </div>
+    
+    <div class="card" id="card259">
+      <p id="quote259">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote259', 'card259')">Copy</button>
+    </div>
+    
+    <div class="card" id="card260">
+      <p id="quote260">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote260', 'card260')">Copy</button>
+    </div>
+    
+    <div class="card" id="card261">
+      <p id="quote261">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote261', 'card261')">Copy</button>
+    </div>
+    
+    <div class="card" id="card262">
+      <p id="quote262">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote262', 'card262')">Copy</button>
+    </div>
+    
+    <div class="card" id="card263">
+      <p id="quote263">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote263', 'card263')">Copy</button>
+    </div>
+    
+    <div class="card" id="card264">
+      <p id="quote264">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote264', 'card264')">Copy</button>
+    </div>
+    
+    <div class="card" id="card265">
+      <p id="quote265">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote265', 'card265')">Copy</button>
+    </div>
+    
+    <div class="card" id="card266">
+      <p id="quote266">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote266', 'card266')">Copy</button>
+    </div>
+    
+    <div class="card" id="card267">
+      <p id="quote267">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote267', 'card267')">Copy</button>
+    </div>
+    
+    <div class="card" id="card268">
+      <p id="quote268">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote268', 'card268')">Copy</button>
+    </div>
+    
+    <div class="card" id="card269">
+      <p id="quote269">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote269', 'card269')">Copy</button>
+    </div>
+    
+    <div class="card" id="card270">
+      <p id="quote270">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote270', 'card270')">Copy</button>
+    </div>
+    
+    <div class="card" id="card271">
+      <p id="quote271">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote271', 'card271')">Copy</button>
+    </div>
+    
+    <div class="card" id="card272">
+      <p id="quote272">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote272', 'card272')">Copy</button>
+    </div>
+    
+    <div class="card" id="card273">
+      <p id="quote273">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote273', 'card273')">Copy</button>
+    </div>
+    
+    <div class="card" id="card274">
+      <p id="quote274">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote274', 'card274')">Copy</button>
+    </div>
+    
+    <div class="card" id="card275">
+      <p id="quote275">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote275', 'card275')">Copy</button>
+    </div>
+    
+    <div class="card" id="card276">
+      <p id="quote276">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote276', 'card276')">Copy</button>
+    </div>
+    
+    <div class="card" id="card277">
+      <p id="quote277">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote277', 'card277')">Copy</button>
+    </div>
+    
+    <div class="card" id="card278">
+      <p id="quote278">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote278', 'card278')">Copy</button>
+    </div>
+    
+    <div class="card" id="card279">
+      <p id="quote279">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote279', 'card279')">Copy</button>
+    </div>
+    
+    <div class="card" id="card280">
+      <p id="quote280">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote280', 'card280')">Copy</button>
+    </div>
+    
+    <div class="card" id="card281">
+      <p id="quote281">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote281', 'card281')">Copy</button>
+    </div>
+    
+    <div class="card" id="card282">
+      <p id="quote282">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote282', 'card282')">Copy</button>
+    </div>
+    
+    <div class="card" id="card283">
+      <p id="quote283">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote283', 'card283')">Copy</button>
+    </div>
+    
+    <div class="card" id="card284">
+      <p id="quote284">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote284', 'card284')">Copy</button>
+    </div>
+    
+    <div class="card" id="card285">
+      <p id="quote285">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote285', 'card285')">Copy</button>
+    </div>
+    
+    <div class="card" id="card286">
+      <p id="quote286">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote286', 'card286')">Copy</button>
+    </div>
+    
+    <div class="card" id="card287">
+      <p id="quote287">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote287', 'card287')">Copy</button>
+    </div>
+    
+    <div class="card" id="card288">
+      <p id="quote288">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote288', 'card288')">Copy</button>
+    </div>
+    
+    <div class="card" id="card289">
+      <p id="quote289">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote289', 'card289')">Copy</button>
+    </div>
+    
+    <div class="card" id="card290">
+      <p id="quote290">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote290', 'card290')">Copy</button>
+    </div>
+    
+    <div class="card" id="card291">
+      <p id="quote291">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote291', 'card291')">Copy</button>
+    </div>
+    
+    <div class="card" id="card292">
+      <p id="quote292">The love of a family is life’s greatest blessing.</p>
+      <button onclick="copyToClipboard('quote292', 'card292')">Copy</button>
+    </div>
+    
+    <div class="card" id="card293">
+      <p id="quote293">Family: where life begins and love never ends.</p>
+      <button onclick="copyToClipboard('quote293', 'card293')">Copy</button>
+    </div>
+    
+    <div class="card" id="card294">
+      <p id="quote294">In time of test, family is best.</p>
+      <button onclick="copyToClipboard('quote294', 'card294')">Copy</button>
+    </div>
+    
+    <div class="card" id="card295">
+      <p id="quote295">Having somewhere to go is home. Having someone to love is family.</p>
+      <button onclick="copyToClipboard('quote295', 'card295')">Copy</button>
+    </div>
+    
+    <div class="card" id="card296">
+      <p id="quote296">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote296', 'card296')">Copy</button>
+    </div>
+    
+    <div class="card" id="card297">
+      <p id="quote297">Rejoice with your family in the beautiful land of life.</p>
+      <button onclick="copyToClipboard('quote297', 'card297')">Copy</button>
+    </div>
+    
+    <div class="card" id="card298">
+      <p id="quote298">Family means no one gets left behind.</p>
+      <button onclick="copyToClipboard('quote298', 'card298')">Copy</button>
+    </div>
+    
+    <div class="card" id="card299">
+      <p id="quote299">Together is my favorite place to be.</p>
+      <button onclick="copyToClipboard('quote299', 'card299')">Copy</button>
+    </div>
+    
+    <div class="card" id="card300">
+      <p id="quote300">Blood makes you related, love makes you family.</p>
+      <button onclick="copyToClipboard('quote300', 'card300')">Copy</button>
+    </div>
+    <h2>Home & Togetherness</h2>
+
+    <div class="card" id="card301">
+      <p id="quote301">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote301', 'card301')">Copy</button>
+    </div>
+    
+    <div class="card" id="card302">
+      <p id="quote302">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote302', 'card302')">Copy</button>
+    </div>
+    
+    <div class="card" id="card303">
+      <p id="quote303">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote303', 'card303')">Copy</button>
+    </div>
+    
+    <div class="card" id="card304">
+      <p id="quote304">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote304', 'card304')">Copy</button>
+    </div>
+    
+    <div class="card" id="card305">
+      <p id="quote305">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote305', 'card305')">Copy</button>
+    </div>
+    
+    <div class="card" id="card306">
+      <p id="quote306">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote306', 'card306')">Copy</button>
+    </div>
+    
+    <div class="card" id="card307">
+      <p id="quote307">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote307', 'card307')">Copy</button>
+    </div>
+    
+    <div class="card" id="card308">
+      <p id="quote308">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote308', 'card308')">Copy</button>
+    </div>
+    
+    <div class="card" id="card309">
+      <p id="quote309">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote309', 'card309')">Copy</button>
+    </div>
+    
+    <div class="card" id="card310">
+      <p id="quote310">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote310', 'card310')">Copy</button>
+    </div>
+    
+    <div class="card" id="card311">
+      <p id="quote311">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote311', 'card311')">Copy</button>
+    </div>
+    
+    <div class="card" id="card312">
+      <p id="quote312">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote312', 'card312')">Copy</button>
+    </div>
+    
+    <div class="card" id="card313">
+      <p id="quote313">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote313', 'card313')">Copy</button>
+    </div>
+    
+    <div class="card" id="card314">
+      <p id="quote314">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote314', 'card314')">Copy</button>
+    </div>
+    
+    <div class="card" id="card315">
+      <p id="quote315">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote315', 'card315')">Copy</button>
+    </div>
+    
+    <div class="card" id="card316">
+      <p id="quote316">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote316', 'card316')">Copy</button>
+    </div>
+    
+    <div class="card" id="card317">
+      <p id="quote317">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote317', 'card317')">Copy</button>
+    </div>
+    
+    <div class="card" id="card318">
+      <p id="quote318">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote318', 'card318')">Copy</button>
+    </div>
+    
+    <div class="card" id="card319">
+      <p id="quote319">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote319', 'card319')">Copy</button>
+    </div>
+    
+    <div class="card" id="card320">
+      <p id="quote320">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote320', 'card320')">Copy</button>
+    </div>
+    
+    <div class="card" id="card321">
+      <p id="quote321">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote321', 'card321')">Copy</button>
+    </div>
+    
+    <div class="card" id="card322">
+      <p id="quote322">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote322', 'card322')">Copy</button>
+    </div>
+    
+    <div class="card" id="card323">
+      <p id="quote323">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote323', 'card323')">Copy</button>
+    </div>
+    
+    <div class="card" id="card324">
+      <p id="quote324">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote324', 'card324')">Copy</button>
+    </div>
+    
+    <div class="card" id="card325">
+      <p id="quote325">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote325', 'card325')">Copy</button>
+    </div>
+    
+    <div class="card" id="card326">
+      <p id="quote326">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote326', 'card326')">Copy</button>
+    </div>
+    
+    <div class="card" id="card327">
+      <p id="quote327">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote327', 'card327')">Copy</button>
+    </div>
+    
+    <div class="card" id="card328">
+      <p id="quote328">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote328', 'card328')">Copy</button>
+    </div>
+    
+    <div class="card" id="card329">
+      <p id="quote329">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote329', 'card329')">Copy</button>
+    </div>
+    
+    <div class="card" id="card330">
+      <p id="quote330">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote330', 'card330')">Copy</button>
+    </div>
+    
+    <div class="card" id="card331">
+      <p id="quote331">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote331', 'card331')">Copy</button>
+    </div>
+    
+    <div class="card" id="card332">
+      <p id="quote332">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote332', 'card332')">Copy</button>
+    </div>
+    
+    <div class="card" id="card333">
+      <p id="quote333">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote333', 'card333')">Copy</button>
+    </div>
+    
+    <div class="card" id="card334">
+      <p id="quote334">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote334', 'card334')">Copy</button>
+    </div>
+    
+    <div class="card" id="card335">
+      <p id="quote335">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote335', 'card335')">Copy</button>
+    </div>
+    
+    <div class="card" id="card336">
+      <p id="quote336">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote336', 'card336')">Copy</button>
+    </div>
+    
+    <div class="card" id="card337">
+      <p id="quote337">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote337', 'card337')">Copy</button>
+    </div>
+    
+    <div class="card" id="card338">
+      <p id="quote338">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote338', 'card338')">Copy</button>
+    </div>
+    
+    <div class="card" id="card339">
+      <p id="quote339">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote339', 'card339')">Copy</button>
+    </div>
+    
+    <div class="card" id="card340">
+      <p id="quote340">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote340', 'card340')">Copy</button>
+    </div>
+    
+    <div class="card" id="card341">
+      <p id="quote341">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote341', 'card341')">Copy</button>
+    </div>
+    
+    <div class="card" id="card342">
+      <p id="quote342">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote342', 'card342')">Copy</button>
+    </div>
+    
+    <div class="card" id="card343">
+      <p id="quote343">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote343', 'card343')">Copy</button>
+    </div>
+    
+    <div class="card" id="card344">
+      <p id="quote344">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote344', 'card344')">Copy</button>
+    </div>
+    
+    <div class="card" id="card345">
+      <p id="quote345">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote345', 'card345')">Copy</button>
+    </div>
+    
+    <div class="card" id="card346">
+      <p id="quote346">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote346', 'card346')">Copy</button>
+    </div>
+    
+    <div class="card" id="card347">
+      <p id="quote347">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote347', 'card347')">Copy</button>
+    </div>
+    
+    <div class="card" id="card348">
+      <p id="quote348">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote348', 'card348')">Copy</button>
+    </div>
+    
+    <div class="card" id="card349">
+      <p id="quote349">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote349', 'card349')">Copy</button>
+    </div>
+    
+    <div class="card" id="card350">
+      <p id="quote350">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote350', 'card350')">Copy</button>
+    </div>
+    
+    <div class="card" id="card351">
+      <p id="quote351">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote351', 'card351')">Copy</button>
+    </div>
+    
+    <div class="card" id="card352">
+      <p id="quote352">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote352', 'card352')">Copy</button>
+    </div>
+    
+    <div class="card" id="card353">
+      <p id="quote353">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote353', 'card353')">Copy</button>
+    </div>
+    
+    <div class="card" id="card354">
+      <p id="quote354">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote354', 'card354')">Copy</button>
+    </div>
+    
+    <div class="card" id="card355">
+      <p id="quote355">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote355', 'card355')">Copy</button>
+    </div>
+    
+    <div class="card" id="card356">
+      <p id="quote356">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote356', 'card356')">Copy</button>
+    </div>
+    
+    <div class="card" id="card357">
+      <p id="quote357">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote357', 'card357')">Copy</button>
+    </div>
+    
+    <div class="card" id="card358">
+      <p id="quote358">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote358', 'card358')">Copy</button>
+    </div>
+    
+    <div class="card" id="card359">
+      <p id="quote359">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote359', 'card359')">Copy</button>
+    </div>
+    
+    <div class="card" id="card360">
+      <p id="quote360">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote360', 'card360')">Copy</button>
+    </div>
+    
+    <div class="card" id="card361">
+      <p id="quote361">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote361', 'card361')">Copy</button>
+    </div>
+    
+    <div class="card" id="card362">
+      <p id="quote362">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote362', 'card362')">Copy</button>
+    </div>
+    
+    <div class="card" id="card363">
+      <p id="quote363">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote363', 'card363')">Copy</button>
+    </div>
+    
+    <div class="card" id="card364">
+      <p id="quote364">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote364', 'card364')">Copy</button>
+    </div>
+    
+    <div class="card" id="card365">
+      <p id="quote365">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote365', 'card365')">Copy</button>
+    </div>
+    
+    <div class="card" id="card366">
+      <p id="quote366">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote366', 'card366')">Copy</button>
+    </div>
+    
+    <div class="card" id="card367">
+      <p id="quote367">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote367', 'card367')">Copy</button>
+    </div>
+    
+    <div class="card" id="card368">
+      <p id="quote368">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote368', 'card368')">Copy</button>
+    </div>
+    
+    <div class="card" id="card369">
+      <p id="quote369">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote369', 'card369')">Copy</button>
+    </div>
+    
+    <div class="card" id="card370">
+      <p id="quote370">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote370', 'card370')">Copy</button>
+    </div>
+    
+    <div class="card" id="card371">
+      <p id="quote371">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote371', 'card371')">Copy</button>
+    </div>
+    
+    <div class="card" id="card372">
+      <p id="quote372">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote372', 'card372')">Copy</button>
+    </div>
+    
+    <div class="card" id="card373">
+      <p id="quote373">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote373', 'card373')">Copy</button>
+    </div>
+    
+    <div class="card" id="card374">
+      <p id="quote374">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote374', 'card374')">Copy</button>
+    </div>
+    
+    <div class="card" id="card375">
+      <p id="quote375">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote375', 'card375')">Copy</button>
+    </div>
+    
+    <div class="card" id="card376">
+      <p id="quote376">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote376', 'card376')">Copy</button>
+    </div>
+    
+    <div class="card" id="card377">
+      <p id="quote377">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote377', 'card377')">Copy</button>
+    </div>
+    
+    <div class="card" id="card378">
+      <p id="quote378">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote378', 'card378')">Copy</button>
+    </div>
+    
+    <div class="card" id="card379">
+      <p id="quote379">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote379', 'card379')">Copy</button>
+    </div>
+    
+    <div class="card" id="card380">
+      <p id="quote380">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote380', 'card380')">Copy</button>
+    </div>
+    
+    <div class="card" id="card381">
+      <p id="quote381">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote381', 'card381')">Copy</button>
+    </div>
+    
+    <div class="card" id="card382">
+      <p id="quote382">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote382', 'card382')">Copy</button>
+    </div>
+    
+    <div class="card" id="card383">
+      <p id="quote383">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote383', 'card383')">Copy</button>
+    </div>
+    
+    <div class="card" id="card384">
+      <p id="quote384">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote384', 'card384')">Copy</button>
+    </div>
+    
+    <div class="card" id="card385">
+      <p id="quote385">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote385', 'card385')">Copy</button>
+    </div>
+    
+    <div class="card" id="card386">
+      <p id="quote386">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote386', 'card386')">Copy</button>
+    </div>
+    
+    <div class="card" id="card387">
+      <p id="quote387">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote387', 'card387')">Copy</button>
+    </div>
+    
+    <div class="card" id="card388">
+      <p id="quote388">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote388', 'card388')">Copy</button>
+    </div>
+    
+    <div class="card" id="card389">
+      <p id="quote389">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote389', 'card389')">Copy</button>
+    </div>
+    
+    <div class="card" id="card390">
+      <p id="quote390">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote390', 'card390')">Copy</button>
+    </div>
+    
+    <div class="card" id="card391">
+      <p id="quote391">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote391', 'card391')">Copy</button>
+    </div>
+    
+    <div class="card" id="card392">
+      <p id="quote392">Home is wherever I'm with you.</p>
+      <button onclick="copyToClipboard('quote392', 'card392')">Copy</button>
+    </div>
+    
+    <div class="card" id="card393">
+      <p id="quote393">Together is a wonderful place to be.</p>
+      <button onclick="copyToClipboard('quote393', 'card393')">Copy</button>
+    </div>
+    
+    <div class="card" id="card394">
+      <p id="quote394">There's no place like home.</p>
+      <button onclick="copyToClipboard('quote394', 'card394')">Copy</button>
+    </div>
+    
+    <div class="card" id="card395">
+      <p id="quote395">Home is the starting place of love and dreams.</p>
+      <button onclick="copyToClipboard('quote395', 'card395')">Copy</button>
+    </div>
+    
+    <div class="card" id="card396">
+      <p id="quote396">What I love most about my home is who I share it with.</p>
+      <button onclick="copyToClipboard('quote396', 'card396')">Copy</button>
+    </div>
+    
+    <div class="card" id="card397">
+      <p id="quote397">Home is the nicest word there is.</p>
+      <button onclick="copyToClipboard('quote397', 'card397')">Copy</button>
+    </div>
+    
+    <div class="card" id="card398">
+      <p id="quote398">A house is made of bricks and beams, a home is made of love and dreams.</p>
+      <button onclick="copyToClipboard('quote398', 'card398')">Copy</button>
+    </div>
+    
+    <div class="card" id="card399">
+      <p id="quote399">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+      <button onclick="copyToClipboard('quote399', 'card399')">Copy</button>
+    </div>
+    
+    <div class="card" id="card400">
+      <p id="quote400">Home isn’t a place, it’s a feeling.</p>
+      <button onclick="copyToClipboard('quote400', 'card400')">Copy</button>
+    </div>
+    <h2>Gratitude & Positivity</h2>
+
+    <div class="card" id="card401">
+      <p id="quote401">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote401', 'card401')">Copy</button>
+    </div>
+    
+    <div class="card" id="card402">
+      <p id="quote402">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote402', 'card402')">Copy</button>
+    </div>
+    
+    <div class="card" id="card403">
+      <p id="quote403">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote403', 'card403')">Copy</button>
+    </div>
+    
+    <div class="card" id="card404">
+      <p id="quote404">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote404', 'card404')">Copy</button>
+    </div>
+    
+    <div class="card" id="card405">
+      <p id="quote405">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote405', 'card405')">Copy</button>
+    </div>
+    
+    <div class="card" id="card406">
+      <p id="quote406">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote406', 'card406')">Copy</button>
+    </div>
+    
+    <div class="card" id="card407">
+      <p id="quote407">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote407', 'card407')">Copy</button>
+    </div>
+    
+    <div class="card" id="card408">
+      <p id="quote408">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote408', 'card408')">Copy</button>
+    </div>
+    
+    <div class="card" id="card409">
+      <p id="quote409">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote409', 'card409')">Copy</button>
+    </div>
+    
+    <div class="card" id="card410">
+      <p id="quote410">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote410', 'card410')">Copy</button>
+    </div>
+    
+    <div class="card" id="card411">
+      <p id="quote411">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote411', 'card411')">Copy</button>
+    </div>
+    
+    <div class="card" id="card412">
+      <p id="quote412">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote412', 'card412')">Copy</button>
+    </div>
+    
+    <div class="card" id="card413">
+      <p id="quote413">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote413', 'card413')">Copy</button>
+    </div>
+    
+    <div class="card" id="card414">
+      <p id="quote414">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote414', 'card414')">Copy</button>
+    </div>
+    
+    <div class="card" id="card415">
+      <p id="quote415">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote415', 'card415')">Copy</button>
+    </div>
+    
+    <div class="card" id="card416">
+      <p id="quote416">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote416', 'card416')">Copy</button>
+    </div>
+    
+    <div class="card" id="card417">
+      <p id="quote417">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote417', 'card417')">Copy</button>
+    </div>
+    
+    <div class="card" id="card418">
+      <p id="quote418">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote418', 'card418')">Copy</button>
+    </div>
+    
+    <div class="card" id="card419">
+      <p id="quote419">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote419', 'card419')">Copy</button>
+    </div>
+    
+    <div class="card" id="card420">
+      <p id="quote420">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote420', 'card420')">Copy</button>
+    </div>
+    
+    <div class="card" id="card421">
+      <p id="quote421">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote421', 'card421')">Copy</button>
+    </div>
+    
+    <div class="card" id="card422">
+      <p id="quote422">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote422', 'card422')">Copy</button>
+    </div>
+    
+    <div class="card" id="card423">
+      <p id="quote423">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote423', 'card423')">Copy</button>
+    </div>
+    
+    <div class="card" id="card424">
+      <p id="quote424">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote424', 'card424')">Copy</button>
+    </div>
+    
+    <div class="card" id="card425">
+      <p id="quote425">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote425', 'card425')">Copy</button>
+    </div>
+    
+    <div class="card" id="card426">
+      <p id="quote426">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote426', 'card426')">Copy</button>
+    </div>
+    
+    <div class="card" id="card427">
+      <p id="quote427">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote427', 'card427')">Copy</button>
+    </div>
+    
+    <div class="card" id="card428">
+      <p id="quote428">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote428', 'card428')">Copy</button>
+    </div>
+    
+    <div class="card" id="card429">
+      <p id="quote429">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote429', 'card429')">Copy</button>
+    </div>
+    
+    <div class="card" id="card430">
+      <p id="quote430">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote430', 'card430')">Copy</button>
+    </div>
+    
+    <div class="card" id="card431">
+      <p id="quote431">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote431', 'card431')">Copy</button>
+    </div>
+    
+    <div class="card" id="card432">
+      <p id="quote432">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote432', 'card432')">Copy</button>
+    </div>
+    
+    <div class="card" id="card433">
+      <p id="quote433">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote433', 'card433')">Copy</button>
+    </div>
+    
+    <div class="card" id="card434">
+      <p id="quote434">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote434', 'card434')">Copy</button>
+    </div>
+    
+    <div class="card" id="card435">
+      <p id="quote435">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote435', 'card435')">Copy</button>
+    </div>
+    
+    <div class="card" id="card436">
+      <p id="quote436">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote436', 'card436')">Copy</button>
+    </div>
+    
+    <div class="card" id="card437">
+      <p id="quote437">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote437', 'card437')">Copy</button>
+    </div>
+    
+    <div class="card" id="card438">
+      <p id="quote438">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote438', 'card438')">Copy</button>
+    </div>
+    
+    <div class="card" id="card439">
+      <p id="quote439">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote439', 'card439')">Copy</button>
+    </div>
+    
+    <div class="card" id="card440">
+      <p id="quote440">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote440', 'card440')">Copy</button>
+    </div>
+    
+    <div class="card" id="card441">
+      <p id="quote441">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote441', 'card441')">Copy</button>
+    </div>
+    
+    <div class="card" id="card442">
+      <p id="quote442">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote442', 'card442')">Copy</button>
+    </div>
+    
+    <div class="card" id="card443">
+      <p id="quote443">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote443', 'card443')">Copy</button>
+    </div>
+    
+    <div class="card" id="card444">
+      <p id="quote444">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote444', 'card444')">Copy</button>
+    </div>
+    
+    <div class="card" id="card445">
+      <p id="quote445">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote445', 'card445')">Copy</button>
+    </div>
+    
+    <div class="card" id="card446">
+      <p id="quote446">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote446', 'card446')">Copy</button>
+    </div>
+    
+    <div class="card" id="card447">
+      <p id="quote447">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote447', 'card447')">Copy</button>
+    </div>
+    
+    <div class="card" id="card448">
+      <p id="quote448">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote448', 'card448')">Copy</button>
+    </div>
+    
+    <div class="card" id="card449">
+      <p id="quote449">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote449', 'card449')">Copy</button>
+    </div>
+    
+    <div class="card" id="card450">
+      <p id="quote450">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote450', 'card450')">Copy</button>
+    </div>
+    
+    <div class="card" id="card451">
+      <p id="quote451">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote451', 'card451')">Copy</button>
+    </div>
+    
+    <div class="card" id="card452">
+      <p id="quote452">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote452', 'card452')">Copy</button>
+    </div>
+    
+    <div class="card" id="card453">
+      <p id="quote453">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote453', 'card453')">Copy</button>
+    </div>
+    
+    <div class="card" id="card454">
+      <p id="quote454">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote454', 'card454')">Copy</button>
+    </div>
+    
+    <div class="card" id="card455">
+      <p id="quote455">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote455', 'card455')">Copy</button>
+    </div>
+    
+    <div class="card" id="card456">
+      <p id="quote456">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote456', 'card456')">Copy</button>
+    </div>
+    
+    <div class="card" id="card457">
+      <p id="quote457">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote457', 'card457')">Copy</button>
+    </div>
+    
+    <div class="card" id="card458">
+      <p id="quote458">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote458', 'card458')">Copy</button>
+    </div>
+    
+    <div class="card" id="card459">
+      <p id="quote459">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote459', 'card459')">Copy</button>
+    </div>
+    
+    <div class="card" id="card460">
+      <p id="quote460">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote460', 'card460')">Copy</button>
+    </div>
+    
+    <div class="card" id="card461">
+      <p id="quote461">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote461', 'card461')">Copy</button>
+    </div>
+    
+    <div class="card" id="card462">
+      <p id="quote462">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote462', 'card462')">Copy</button>
+    </div>
+    
+    <div class="card" id="card463">
+      <p id="quote463">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote463', 'card463')">Copy</button>
+    </div>
+    
+    <div class="card" id="card464">
+      <p id="quote464">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote464', 'card464')">Copy</button>
+    </div>
+    
+    <div class="card" id="card465">
+      <p id="quote465">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote465', 'card465')">Copy</button>
+    </div>
+    
+    <div class="card" id="card466">
+      <p id="quote466">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote466', 'card466')">Copy</button>
+    </div>
+    
+    <div class="card" id="card467">
+      <p id="quote467">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote467', 'card467')">Copy</button>
+    </div>
+    
+    <div class="card" id="card468">
+      <p id="quote468">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote468', 'card468')">Copy</button>
+    </div>
+    
+    <div class="card" id="card469">
+      <p id="quote469">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote469', 'card469')">Copy</button>
+    </div>
+    
+    <div class="card" id="card470">
+      <p id="quote470">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote470', 'card470')">Copy</button>
+    </div>
+    
+    <div class="card" id="card471">
+      <p id="quote471">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote471', 'card471')">Copy</button>
+    </div>
+    
+    <div class="card" id="card472">
+      <p id="quote472">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote472', 'card472')">Copy</button>
+    </div>
+    
+    <div class="card" id="card473">
+      <p id="quote473">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote473', 'card473')">Copy</button>
+    </div>
+    
+    <div class="card" id="card474">
+      <p id="quote474">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote474', 'card474')">Copy</button>
+    </div>
+    
+    <div class="card" id="card475">
+      <p id="quote475">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote475', 'card475')">Copy</button>
+    </div>
+    
+    <div class="card" id="card476">
+      <p id="quote476">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote476', 'card476')">Copy</button>
+    </div>
+    
+    <div class="card" id="card477">
+      <p id="quote477">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote477', 'card477')">Copy</button>
+    </div>
+    
+    <div class="card" id="card478">
+      <p id="quote478">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote478', 'card478')">Copy</button>
+    </div>
+    
+    <div class="card" id="card479">
+      <p id="quote479">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote479', 'card479')">Copy</button>
+    </div>
+    
+    <div class="card" id="card480">
+      <p id="quote480">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote480', 'card480')">Copy</button>
+    </div>
+    
+    <div class="card" id="card481">
+      <p id="quote481">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote481', 'card481')">Copy</button>
+    </div>
+    
+    <div class="card" id="card482">
+      <p id="quote482">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote482', 'card482')">Copy</button>
+    </div>
+    
+    <div class="card" id="card483">
+      <p id="quote483">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote483', 'card483')">Copy</button>
+    </div>
+    
+    <div class="card" id="card484">
+      <p id="quote484">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote484', 'card484')">Copy</button>
+    </div>
+    
+    <div class="card" id="card485">
+      <p id="quote485">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote485', 'card485')">Copy</button>
+    </div>
+    
+    <div class="card" id="card486">
+      <p id="quote486">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote486', 'card486')">Copy</button>
+    </div>
+    
+    <div class="card" id="card487">
+      <p id="quote487">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote487', 'card487')">Copy</button>
+    </div>
+    
+    <div class="card" id="card488">
+      <p id="quote488">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote488', 'card488')">Copy</button>
+    </div>
+    
+    <div class="card" id="card489">
+      <p id="quote489">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote489', 'card489')">Copy</button>
+    </div>
+    
+    <div class="card" id="card490">
+      <p id="quote490">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote490', 'card490')">Copy</button>
+    </div>
+    
+    <div class="card" id="card491">
+      <p id="quote491">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote491', 'card491')">Copy</button>
+    </div>
+    
+    <div class="card" id="card492">
+      <p id="quote492">Gratitude turns what we have into enough.</p>
+      <button onclick="copyToClipboard('quote492', 'card492')">Copy</button>
+    </div>
+    
+    <div class="card" id="card493">
+      <p id="quote493">Start each day with a grateful heart.</p>
+      <button onclick="copyToClipboard('quote493', 'card493')">Copy</button>
+    </div>
+    
+    <div class="card" id="card494">
+      <p id="quote494">Positive mind. Positive vibes. Positive life.</p>
+      <button onclick="copyToClipboard('quote494', 'card494')">Copy</button>
+    </div>
+    
+    <div class="card" id="card495">
+      <p id="quote495">Gratitude is the healthiest of all human emotions.</p>
+      <button onclick="copyToClipboard('quote495', 'card495')">Copy</button>
+    </div>
+    
+    <div class="card" id="card496">
+      <p id="quote496">A grateful heart is a magnet for miracles.</p>
+      <button onclick="copyToClipboard('quote496', 'card496')">Copy</button>
+    </div>
+    
+    <div class="card" id="card497">
+      <p id="quote497">Train your mind to see the good in everything.</p>
+      <button onclick="copyToClipboard('quote497', 'card497')">Copy</button>
+    </div>
+    
+    <div class="card" id="card498">
+      <p id="quote498">When you focus on the good, the good gets better.</p>
+      <button onclick="copyToClipboard('quote498', 'card498')">Copy</button>
+    </div>
+    
+    <div class="card" id="card499">
+      <p id="quote499">Happiness is not by chance, but by choice.</p>
+      <button onclick="copyToClipboard('quote499', 'card499')">Copy</button>
+    </div>
+    
+    <div class="card" id="card500">
+      <p id="quote500">Look for something positive in each day.</p>
+      <button onclick="copyToClipboard('quote500', 'card500')">Copy</button>
     </div>
     
   <script>
-    function copyToClipboard(id, messageId) {
-      const text = document.getElementById(id).innerText;
+    function copyToClipboard(quoteId, cardId) {
+      const text = document.getElementById(quoteId).innerText;
       navigator.clipboard.writeText(text);
-      const msg = document.getElementById(messageId);
-      msg.style.display = 'inline';
+      const card = document.getElementById(cardId);
+      card.classList.add('fade-out');
       setTimeout(() => {
-        msg.style.display = 'none';
-      }, 1500);
+        card.remove();
+      }, 1000);
     }
   </script>
 </body>
