@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Copy</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>100 Quotes About Joy, Love & Family</h2>
+
+    <div class="card">
+      <p id="quote1">Joy is not in things; it is in us.</p>
+      <button onclick="copyToClipboard('quote1')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote2">The best thing to hold onto in life is each other.</p>
+      <button onclick="copyToClipboard('quote2')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote3">Family is not an important thing, it’s everything.</p>
+      <button onclick="copyToClipboard('quote3')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote4">Love begins at home.</p>
+      <button onclick="copyToClipboard('quote4')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote5">A happy family is but an earlier heaven.</p>
+      <button onclick="copyToClipboard('quote5')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote6">Where there is love, there is life.</p>
+      <button onclick="copyToClipboard('quote6')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote7">The love of family is life's greatest blessing.</p>
+      <button onclick="copyToClipboard('quote7')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote8">It's not what we have in life, but who we have in our life that matters.</p>
+      <button onclick="copyToClipboard('quote8')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote9">Joy multiplies when it is shared among friends and family.</p>
+      <button onclick="copyToClipboard('quote9')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote10">Happiness is homemade.</p>
+      <button onclick="copyToClipboard('quote10')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote11">Joy is not in things; it is in us. (Quote #11)</p>
+      <button onclick="copyToClipboard('quote11')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote12">The best thing to hold onto in life is each other. (Quote #12)</p>
+      <button onclick="copyToClipboard('quote12')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote13">Family is not an important thing, it’s everything. (Quote #13)</p>
+      <button onclick="copyToClipboard('quote13')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote14">Love begins at home. (Quote #14)</p>
+      <button onclick="copyToClipboard('quote14')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote15">A happy family is but an earlier heaven. (Quote #15)</p>
+      <button onclick="copyToClipboard('quote15')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote16">Where there is love, there is life. (Quote #16)</p>
+      <button onclick="copyToClipboard('quote16')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote17">The love of family is life's greatest blessing. (Quote #17)</p>
+      <button onclick="copyToClipboard('quote17')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote18">It's not what we have in life, but who we have in our life that matters. (Quote #18)</p>
+      <button onclick="copyToClipboard('quote18')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote19">Joy multiplies when it is shared among friends and family. (Quote #19)</p>
+      <button onclick="copyToClipboard('quote19')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote20">Happiness is homemade. (Quote #20)</p>
+      <button onclick="copyToClipboard('quote20')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote21">Joy is not in things; it is in us. (Quote #21)</p>
+      <button onclick="copyToClipboard('quote21')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote22">The best thing to hold onto in life is each other. (Quote #22)</p>
+      <button onclick="copyToClipboard('quote22')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote23">Family is not an important thing, it’s everything. (Quote #23)</p>
+      <button onclick="copyToClipboard('quote23')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote24">Love begins at home. (Quote #24)</p>
+      <button onclick="copyToClipboard('quote24')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote25">A happy family is but an earlier heaven. (Quote #25)</p>
+      <button onclick="copyToClipboard('quote25')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote26">Where there is love, there is life. (Quote #26)</p>
+      <button onclick="copyToClipboard('quote26')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote27">The love of family is life's greatest blessing. (Quote #27)</p>
+      <button onclick="copyToClipboard('quote27')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote28">It's not what we have in life, but who we have in our life that matters. (Quote #28)</p>
+      <button onclick="copyToClipboard('quote28')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote29">Joy multiplies when it is shared among friends and family. (Quote #29)</p>
+      <button onclick="copyToClipboard('quote29')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote30">Happiness is homemade. (Quote #30)</p>
+      <button onclick="copyToClipboard('quote30')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote31">Joy is not in things; it is in us. (Quote #31)</p>
+      <button onclick="copyToClipboard('quote31')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote32">The best thing to hold onto in life is each other. (Quote #32)</p>
+      <button onclick="copyToClipboard('quote32')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote33">Family is not an important thing, it’s everything. (Quote #33)</p>
+      <button onclick="copyToClipboard('quote33')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote34">Love begins at home. (Quote #34)</p>
+      <button onclick="copyToClipboard('quote34')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote35">A happy family is but an earlier heaven. (Quote #35)</p>
+      <button onclick="copyToClipboard('quote35')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote36">Where there is love, there is life. (Quote #36)</p>
+      <button onclick="copyToClipboard('quote36')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote37">The love of family is life's greatest blessing. (Quote #37)</p>
+      <button onclick="copyToClipboard('quote37')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote38">It's not what we have in life, but who we have in our life that matters. (Quote #38)</p>
+      <button onclick="copyToClipboard('quote38')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote39">Joy multiplies when it is shared among friends and family. (Quote #39)</p>
+      <button onclick="copyToClipboard('quote39')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote40">Happiness is homemade. (Quote #40)</p>
+      <button onclick="copyToClipboard('quote40')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote41">Joy is not in things; it is in us. (Quote #41)</p>
+      <button onclick="copyToClipboard('quote41')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote42">The best thing to hold onto in life is each other. (Quote #42)</p>
+      <button onclick="copyToClipboard('quote42')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote43">Family is not an important thing, it’s everything. (Quote #43)</p>
+      <button onclick="copyToClipboard('quote43')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote44">Love begins at home. (Quote #44)</p>
+      <button onclick="copyToClipboard('quote44')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote45">A happy family is but an earlier heaven. (Quote #45)</p>
+      <button onclick="copyToClipboard('quote45')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote46">Where there is love, there is life. (Quote #46)</p>
+      <button onclick="copyToClipboard('quote46')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote47">The love of family is life's greatest blessing. (Quote #47)</p>
+      <button onclick="copyToClipboard('quote47')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote48">It's not what we have in life, but who we have in our life that matters. (Quote #48)</p>
+      <button onclick="copyToClipboard('quote48')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote49">Joy multiplies when it is shared among friends and family. (Quote #49)</p>
+      <button onclick="copyToClipboard('quote49')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote50">Happiness is homemade. (Quote #50)</p>
+      <button onclick="copyToClipboard('quote50')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote51">Joy is not in things; it is in us. (Quote #51)</p>
+      <button onclick="copyToClipboard('quote51')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote52">The best thing to hold onto in life is each other. (Quote #52)</p>
+      <button onclick="copyToClipboard('quote52')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote53">Family is not an important thing, it’s everything. (Quote #53)</p>
+      <button onclick="copyToClipboard('quote53')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote54">Love begins at home. (Quote #54)</p>
+      <button onclick="copyToClipboard('quote54')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote55">A happy family is but an earlier heaven. (Quote #55)</p>
+      <button onclick="copyToClipboard('quote55')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote56">Where there is love, there is life. (Quote #56)</p>
+      <button onclick="copyToClipboard('quote56')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote57">The love of family is life's greatest blessing. (Quote #57)</p>
+      <button onclick="copyToClipboard('quote57')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote58">It's not what we have in life, but who we have in our life that matters. (Quote #58)</p>
+      <button onclick="copyToClipboard('quote58')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote59">Joy multiplies when it is shared among friends and family. (Quote #59)</p>
+      <button onclick="copyToClipboard('quote59')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote60">Happiness is homemade. (Quote #60)</p>
+      <button onclick="copyToClipboard('quote60')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote61">Joy is not in things; it is in us. (Quote #61)</p>
+      <button onclick="copyToClipboard('quote61')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote62">The best thing to hold onto in life is each other. (Quote #62)</p>
+      <button onclick="copyToClipboard('quote62')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote63">Family is not an important thing, it’s everything. (Quote #63)</p>
+      <button onclick="copyToClipboard('quote63')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote64">Love begins at home. (Quote #64)</p>
+      <button onclick="copyToClipboard('quote64')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote65">A happy family is but an earlier heaven. (Quote #65)</p>
+      <button onclick="copyToClipboard('quote65')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote66">Where there is love, there is life. (Quote #66)</p>
+      <button onclick="copyToClipboard('quote66')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote67">The love of family is life's greatest blessing. (Quote #67)</p>
+      <button onclick="copyToClipboard('quote67')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote68">It's not what we have in life, but who we have in our life that matters. (Quote #68)</p>
+      <button onclick="copyToClipboard('quote68')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote69">Joy multiplies when it is shared among friends and family. (Quote #69)</p>
+      <button onclick="copyToClipboard('quote69')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote70">Happiness is homemade. (Quote #70)</p>
+      <button onclick="copyToClipboard('quote70')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote71">Joy is not in things; it is in us. (Quote #71)</p>
+      <button onclick="copyToClipboard('quote71')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote72">The best thing to hold onto in life is each other. (Quote #72)</p>
+      <button onclick="copyToClipboard('quote72')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote73">Family is not an important thing, it’s everything. (Quote #73)</p>
+      <button onclick="copyToClipboard('quote73')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote74">Love begins at home. (Quote #74)</p>
+      <button onclick="copyToClipboard('quote74')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote75">A happy family is but an earlier heaven. (Quote #75)</p>
+      <button onclick="copyToClipboard('quote75')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote76">Where there is love, there is life. (Quote #76)</p>
+      <button onclick="copyToClipboard('quote76')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote77">The love of family is life's greatest blessing. (Quote #77)</p>
+      <button onclick="copyToClipboard('quote77')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote78">It's not what we have in life, but who we have in our life that matters. (Quote #78)</p>
+      <button onclick="copyToClipboard('quote78')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote79">Joy multiplies when it is shared among friends and family. (Quote #79)</p>
+      <button onclick="copyToClipboard('quote79')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote80">Happiness is homemade. (Quote #80)</p>
+      <button onclick="copyToClipboard('quote80')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote81">Joy is not in things; it is in us. (Quote #81)</p>
+      <button onclick="copyToClipboard('quote81')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote82">The best thing to hold onto in life is each other. (Quote #82)</p>
+      <button onclick="copyToClipboard('quote82')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote83">Family is not an important thing, it’s everything. (Quote #83)</p>
+      <button onclick="copyToClipboard('quote83')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote84">Love begins at home. (Quote #84)</p>
+      <button onclick="copyToClipboard('quote84')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote85">A happy family is but an earlier heaven. (Quote #85)</p>
+      <button onclick="copyToClipboard('quote85')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote86">Where there is love, there is life. (Quote #86)</p>
+      <button onclick="copyToClipboard('quote86')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote87">The love of family is life's greatest blessing. (Quote #87)</p>
+      <button onclick="copyToClipboard('quote87')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote88">It's not what we have in life, but who we have in our life that matters. (Quote #88)</p>
+      <button onclick="copyToClipboard('quote88')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote89">Joy multiplies when it is shared among friends and family. (Quote #89)</p>
+      <button onclick="copyToClipboard('quote89')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote90">Happiness is homemade. (Quote #90)</p>
+      <button onclick="copyToClipboard('quote90')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote91">Joy is not in things; it is in us. (Quote #91)</p>
+      <button onclick="copyToClipboard('quote91')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote92">The best thing to hold onto in life is each other. (Quote #92)</p>
+      <button onclick="copyToClipboard('quote92')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote93">Family is not an important thing, it’s everything. (Quote #93)</p>
+      <button onclick="copyToClipboard('quote93')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote94">Love begins at home. (Quote #94)</p>
+      <button onclick="copyToClipboard('quote94')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote95">A happy family is but an earlier heaven. (Quote #95)</p>
+      <button onclick="copyToClipboard('quote95')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote96">Where there is love, there is life. (Quote #96)</p>
+      <button onclick="copyToClipboard('quote96')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote97">The love of family is life's greatest blessing. (Quote #97)</p>
+      <button onclick="copyToClipboard('quote97')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote98">It's not what we have in life, but who we have in our life that matters. (Quote #98)</p>
+      <button onclick="copyToClipboard('quote98')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote99">Joy multiplies when it is shared among friends and family. (Quote #99)</p>
+      <button onclick="copyToClipboard('quote99')">Copy</button>
+    </div>
+    
+    <div class="card">
+      <p id="quote100">Happiness is homemade. (Quote #100)</p>
+      <button onclick="copyToClipboard('quote100')">Copy</button>
+    </div>
+    
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied!");
+      });
+    }
+  </script>
+</body>
+</html>
