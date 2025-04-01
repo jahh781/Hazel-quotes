@@ -1,1 +1,161 @@
-<html><body><p>No index file found.</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soul-Stirring Quotes</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .copied-message {
+      display: none;
+      color: green;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+    .fade-out {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>Soul-Stirring Quotes</h1>
+<h2>Joy</h2>
+
+        <div class="card" id="card1">
+          <p id="quote1">Joy that doesn’t need to be seen lasts the longest.</p>
+          <button onclick="copyToClipboard('quote1', 'msg1', 'card1')">Copy</button>
+          <span class="copied-message" id="msg1">Copied!</span>
+        </div>
+        
+        <div class="card" id="card2">
+          <p id="quote2">Don’t wait for big things to feel joyful. Joy often lives in the unnoticed corners.</p>
+          <button onclick="copyToClipboard('quote2', 'msg2', 'card2')">Copy</button>
+          <span class="copied-message" id="msg2">Copied!</span>
+        </div>
+        
+        <div class="card" id="card3">
+          <p id="quote3">Joy is a daily practice of paying attention.</p>
+          <button onclick="copyToClipboard('quote3', 'msg3', 'card3')">Copy</button>
+          <span class="copied-message" id="msg3">Copied!</span>
+        </div>
+        
+        <div class="card" id="card4">
+          <p id="quote4">Joy doesn’t need to be earned. It just needs space to land.</p>
+          <button onclick="copyToClipboard('quote4', 'msg4', 'card4')">Copy</button>
+          <span class="copied-message" id="msg4">Copied!</span>
+        </div>
+        
+        <div class="card" id="card5">
+          <p id="quote5">Joy doesn’t rush — it arrives when you’re ready to feel it.</p>
+          <button onclick="copyToClipboard('quote5', 'msg5', 'card5')">Copy</button>
+          <span class="copied-message" id="msg5">Copied!</span>
+        </div>
+        <h2>Presence</h2>
+
+        <div class="card" id="card6">
+          <p id="quote6">The present moment is not a stepping stone — it’s a sacred place to rest.</p>
+          <button onclick="copyToClipboard('quote6', 'msg6', 'card6')">Copy</button>
+          <span class="copied-message" id="msg6">Copied!</span>
+        </div>
+        
+        <div class="card" id="card7">
+          <p id="quote7">Be here now, not because you should — but because you can.</p>
+          <button onclick="copyToClipboard('quote7', 'msg7', 'card7')">Copy</button>
+          <span class="copied-message" id="msg7">Copied!</span>
+        </div>
+        
+        <div class="card" id="card8">
+          <p id="quote8">This moment is already enough. You don’t have to fix it.</p>
+          <button onclick="copyToClipboard('quote8', 'msg8', 'card8')">Copy</button>
+          <span class="copied-message" id="msg8">Copied!</span>
+        </div>
+        
+        <div class="card" id="card9">
+          <p id="quote9">The most meaningful moments are usually the ones we almost overlook.</p>
+          <button onclick="copyToClipboard('quote9', 'msg9', 'card9')">Copy</button>
+          <span class="copied-message" id="msg9">Copied!</span>
+        </div>
+        
+        <div class="card" id="card10">
+          <p id="quote10">Life is happening in the in-between. Stay for it.</p>
+          <button onclick="copyToClipboard('quote10', 'msg10', 'card10')">Copy</button>
+          <span class="copied-message" id="msg10">Copied!</span>
+        </div>
+        <h2>Rest</h2>
+
+        <div class="card" id="card11">
+          <p id="quote11">You don’t have to earn your right to rest.</p>
+          <button onclick="copyToClipboard('quote11', 'msg11', 'card11')">Copy</button>
+          <span class="copied-message" id="msg11">Copied!</span>
+        </div>
+        
+        <div class="card" id="card12">
+          <p id="quote12">Even the stars disappear for a while. That’s how they shine again.</p>
+          <button onclick="copyToClipboard('quote12', 'msg12', 'card12')">Copy</button>
+          <span class="copied-message" id="msg12">Copied!</span>
+        </div>
+        
+        <div class="card" id="card13">
+          <p id="quote13">Rest doesn’t mean you’ve given up — it means you’re giving in to what’s true.</p>
+          <button onclick="copyToClipboard('quote13', 'msg13', 'card13')">Copy</button>
+          <span class="copied-message" id="msg13">Copied!</span>
+        </div>
+        
+        <div class="card" id="card14">
+          <p id="quote14">Sometimes, the bravest thing you can do is stop.</p>
+          <button onclick="copyToClipboard('quote14', 'msg14', 'card14')">Copy</button>
+          <span class="copied-message" id="msg14">Copied!</span>
+        </div>
+        
+        <div class="card" id="card15">
+          <p id="quote15">The soul repairs itself in stillness.</p>
+          <button onclick="copyToClipboard('quote15', 'msg15', 'card15')">Copy</button>
+          <span class="copied-message" id="msg15">Copied!</span>
+        </div>
+        
+<script>
+  function copyToClipboard(id, messageId, cardId) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
+    const msg = document.getElementById(messageId);
+    msg.style.display = 'inline';
+    const card = document.getElementById(cardId);
+    card.classList.add('fade-out');
+    setTimeout(() => {
+      card.style.display = 'none';
+    }, 1000);
+  }
+</script>
+</body>
+</html>
