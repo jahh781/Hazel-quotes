@@ -1042,5 +1042,17 @@
   <button onclick="copyToClipboard('quote164', 'msg164')">Copy</button>
   <span class="copied-message" id="msg164">Copied!</span>
 </div>
-</body>
+
+ <script>
+    function copyToClipboard(quoteId, msgId) {
+      const text = document.getElementById(quoteId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const msg = document.getElementById(msgId);
+        msg.classList.add("show");
+        setTimeout(() => {
+          msg.classList.remove("show");
+        }, 1500);
+      });
+    }
+  </script>
 </html>
